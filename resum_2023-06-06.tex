@@ -1,0 +1,109 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[catalan]{babel}
+\usepackage[colorlinks=true]{hyperref}
+
+\title{Resum de la reunió del 06/06/2023}
+
+\begin{document}
+\maketitle
+
+Separem el temes a tractar en dues àrees, a pesar que algunes limitacions detectades
+a les aules d'informàtica serien també corregides per l'existència de serveis generals
+adequats.
+
+\section{Aules d'informàtica}
+\subsection{Ordinadors virtuals en Linux}
+Celebrem la notícia de què a partir del pròxim curs als ordinadors de les aules hi haurà la possibilitat d'iniciar
+un entorn virtual de Linux, on estiguen instal·lats els programes de Linux que hagem
+sol·licitat. Això soluciona el problema de què no podíem sol·licitar la instal·lació
+de programari en Linux.
+
+En aquest entorn virtual les actualitzacions no seran més àgils del que ja ho són en
+l'entorn de Windows. I en tractar-se de màquines virtuals, totes les modificacions
+(descàrregues d'arxius, instal·lació de paquets en espai d'usuari...) desapareixeran
+tan prompte com la màquina s'apague.
+
+Quant al problema de què la màquina virtual no aprofitava la pantalla sencera,
+ja està solucionat: hi ha un botó que permet ocupar la pantalla completa.
+
+\subsection{Ordinadors físics, amb Ubuntu}
+Existeix la possibilitat de treballar directament en el sistema operatiu
+de l'ordinador de l'aula, que és Ubuntu. Actualment, en les màquines físiques no
+hi ha instal·lats més que els programes essencials, perquè es consideren només una
+porta d'entrada als ordinadors virtuals, on es manté el programari de docència. Així,
+s'evita la saturació dels discs durs, etc. Però es podria instal·lar alguna cosa més,
+per fer els ordinadors físics més útils. L'avantatge principal de poder treballar en
+el sistema de la màquina física seria poder guardar la configuració de la persona usuària:
+els documents creats, els paquets instal·lats en l'espai d'usuari, etc. Però aquest
+avantatge només podríem gaudir-lo si cada estudiant treballa sempre en la mateixa màquina.
+
+Aquesta possibilitat crec que va quedar en l'aire, si ho vaig entendre bé, en espera de
+què pensem si realment val la pena. Jo pense que sí. Si els ordinadors
+físics tingueren les eines bàsiques que qualsevol assignatura pot necessitar (R, RStudio,
+Python, \LaTeX, JupyterLab, git i potser conda) entraríem ben poc a l'ordinador virtual,
+almenys en algunes assignatures.
+
+\section{Serveis informàtics generals}
+Entre les propostes inicials hi havia alguns serveis informàtics que serien útils més
+enllà de la Facultat. Entenem que per tal que el Servei d'Informàtica dedique recursos
+a oferir aquests serveis, ha d'haver un interés més general. Ens comprometem a fer una
+consulta i intentar arreplegar els suports necessaris perquè s'oferisquen aquests serveis.
+Es va comentar també que si els centres oferiren part dels recursos necessaris per posar
+en marxa una iniciativa així seria molt més probable que la Universitat assumira la seua
+part.
+
+Els serveis dels que estem parlant serien, en principi els següents:
+
+\begin{description}
+   \item[JupyterHub\footnote{\href{https://jupyter.org/hub}{https://jupyter.org/hub}}] Permetria
+que ens connectàrem a través del navegador
+a un servidor de càlcul, amb una interfície idèntica a la de JupyterLab, i que els
+processos s'executaren allà, remotament. De fet, JupyterHub ofereix també altres interfícies:
+com RStudio-server o consoles de Python, R o Bash, i per tant solucionaria més d'una
+necessitat alhora. Entre les utilitats de JupyterHub per a docència, identifiquem les
+següents:
+   \begin{enumerate}
+   \item L'ús de Jupyter Notebooks com a guions de pràctiques, que combinen explicació,
+         dades i anàlisis de forma interactiva\footnote{\href{https://jupyter4edu.github.io/jupyter-edu-book/}{https://jupyter4edu.github.io/jupyter-edu-book/}}.
+   \item Administració centralitzada dels recursos (espai de disc, programes...) i dels permissos
+         disponibles per a les persones usuàries.
+   \item Possibilitat de compartir bases de dades grans localitzades al mateix servidor.
+   \item L'entorn d'usuari és permanent\footnote{A la reunió ho vaig descriure com una sèrie de màquines virtuals creades cada vegada que la persona usuària es connecta; però no és això. Ho havia confòs amb el \href{https://jupyter.org/binder}{BinderHub}}.
+   \end{enumerate}
+
+Actualment, Anaconda Cloud ofereix un JupyterHub gratuït, amb recursos limitats i sota
+registre, així com altres modalitats de pagament: \href{https://anaconda.cloud/anaconda-tools}{https://anaconda.cloud/anaconda-tools}.
+Pot servir per fer-se una idea del que podria oferir la Universitat de València.
+
+   \item[Servidor de git] Un servidor de \textsf{git} pot ser tan senzill que només
+s'utilitze a través de la línia de comandaments o pot tenir una interfície gràfica en la web,
+a la manera de GitHub. Una opció amb interfície web i amb llicència oberta MIT Expat seria
+la versió \emph{Community Edition} (CE) de \href{https://gitlab.com/gitlab-org/gitlab-foss/-/blob/master/README.md}{GitLab}. Els beneficis d'un servidor de git per a la docència poden no
+ser obvis, i s'entén que aquest servei no seria prioritari. Tanmateix, crec que val la pena
+considerar-ho. La idea és que els materials didàctics, que any rere any compartim entre
+nosaltres, estarien molt ben allotjats en repositoris, a la manera del programari lliure,
+on qualsevol puga descarregar-se'n una còpia i contribuir a la seua actualització. Almenys
+entre el professorat disposat a substituir els PowerPoints per ioslides o documents de \LaTeX,
+açò seria de gran ajuda.
+
+   \item[Overleaf] Es va comentar que algun altre centre (Matemàtiques?) havia sol·licitat
+algun servei semblant a Overleaf, per compartir documents de \LaTeX. És una idea excel·lent.
+Però no va quedar clar si el que se sol·licita és només un compte institucional en una plataforma
+existent o una implementació pròpia. Jo no conec una distribució lliure d'Overleaf o similar,
+però és possible que n'existisquen. L'ús principal entenc que seria la col·laboració en l'escriptura
+d'articles científics, però potser també l'elaboració de treballs de grup per a classe
+per part d'estudiants, o la redacció d'actes de reunions, etc.
+\end{description}
+
+\section{Compromissos}
+\begin{enumerate}
+\item Per part del Servei d'Informàtica, afegir als ordinadors de les aules màquines virtuals 
+amb un sistema operatiu Linux, on puguem sol·licitar que s'instal·le programari.
+\item Per part de la Facultat de Ciències Biològiques, elaborar la consulta sobre la
+necessitat dels serveis informàtics esmentats i reprendre'n la sol·licitud, si escau,
+més endavant, amb un major suport.
+\end{enumerate}
+
+\end{document}

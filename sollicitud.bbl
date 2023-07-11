@@ -1,0 +1,17 @@
+\begin{thebibliography}{1}
+
+\bibitem{Barba2019}
+L.~Barba, L.~Barker, D.~Blank, J.~Brown, A.~Downey, T.~George, L.~Heagy,
+  K.~Mandli, J.~Moore, D.~Lippert, K.~Niemeyer, R.~Watkins, R.~West, E.~Wickes,
+  C.~Willing, and M.~Zingale, {\em {Teaching and learning with Jupyter}}.
+\newblock Bookdown, 2019.
+
+\bibitem{JupyterHub}
+{Project Jupyter}, ``Jupyter hub.'' \url{https://jupyter.org/hub}, 2023.
+\newblock Accessed on 2023-05-04.
+
+\bibitem{Vee2017}
+A.~Vee, {\em {Coding Literacy. How computer programming is changing writing}}.
+\newblock The MIT Press, 2017.
+
+\end{thebibliography}

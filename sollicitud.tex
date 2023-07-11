@@ -58,23 +58,21 @@ més freqüent d'utilitzar ordinadors propis siga preferible.
 
 \subsection{Obstrucció de l'ús de l'entorn Linux}
 Alguns programes instal·lats a l'entorn MS Windows podrien ser executats igualment en
-l'entron Linux. Aquesta possibilitat és molt desitjable, perquè MS Windows s'executa
-en un entorn virtual dins de Linux, en una finestra, el marc de la qual ocupa un marge
-de la pantalla. Això redueix significativament la superfície útil de la pantalla i
-afecta la qualitat de les visualitzacions.
+l'entron Linux. Aquesta possibilitat és molt desitjable per tots els motius que fan
+el programari lliure preferible al privatiu.
 
 Altres programes senzillament només existeixen per a Linux. En aquest cas, no tenim
 opció d'utilitzar-los a les aules d'informàtica, tot i existir els recursos necessaris.
 Fins ara ha sigut impossible sol·licitar la instal·lació
 de programari docent en l'entorn Linux de les aules d'informàtica. Els administradors
-de les aules d'informàtica només atenen les peticions d'instal·lació de programari en
+de les aules d'informàtica només atenien les peticions d'instal·lació de programari en
 MS Windows.
 
 Certament, la persona usuària sempre té la possibilitat d'instal·lar programari dins la seua
 pròpia carpeta, on gaudeix de permissos d'escriptura. Per exemple, no és impossible
 instal·lar el gestor de paquets \textsf{conda}, i amb ell instal·lar qualsevol altre programa en
 una carpeta local. Tanmateix, el procés pot prendre molts minuts de classe, i s'hauria
-de repetir a cada sessió, perquè les modificacions a l'entorn d'usuària no són permanents.
+de repetir a cada vegada que es fa servir un ordinador diferent de l'aula.
 
 Considerem que a les aules d'informàtica de la Facultat de Biologia és necessari poder
 treballar i ensenyar en un entorn Linux.
@@ -174,17 +172,20 @@ en format PDF o HTML en ser compilats.
 
 El programa RStudio té una versió "servidor", RStudio-server, que permet l'ús compartit
 del servidor de càlcul a través d'una interfície típica de RStudio en una pestanya del
-navegador. Aquesta possibilitat no només facilita l'ús i l'edició documents Rmarkdown,
+navegador. Aquesta possibilitat no només facilita l'ús i l'edició de documents Rmarkdown,
 sinó que permetria a tots els membres d'un grup executar les anàlisis o els seus \emph{scripts}
 en un mateix ambient, amb els mateixos paquets instal·lats i amb accés a les mateixes dades.
 
-\subsection{Jupyter Hub}
+\subsection{JupyterHub}
 Una altra modalitat de documents executables són els \emph{Jupyter notebooks}
 ("quaderns Jupyter"\ en avant), que s'editen
 i es visualitzen a través del navegador, a manera d'una aplicació web, i tenen l'avantatge
 de ser més dinàmics: pots actualitzar seccions concretes del document sense haver de compilar-lo
 tot sencer. Els quaderns Jupyter accepten instruccions en multitud de llenguatges de
-programació, incloent Python, Julia, \textsf{R}, Bash, etc.
+programació, incloent Python, Julia, \textsf{R}, Bash, etc. A l'enllaç següent, amb una
+mica de paciència, s'activa un JupyterLab amb un parell de quaderns Jupyter d'exemple.
+
+\href{https://mybinder.org/v2/gh/IgnasiLucas/Khi2/soca}{https://mybinder.org/v2/gh/IgnasiLucas/Khi2/soca}
 
 Aquests documents tenen potencials didàctics enormes \cite{Barba2019}. Un dels seus avantages
 és la facilitat amb què poden ser compartits. En estar basats en programari lliure i formats
@@ -192,22 +193,18 @@ estàndard, són documents dissenyats per la difussió i la col·laboració. Act
 solucions de programari lliure per oferir de forma remota accés als entorns de computació
 virtuals on resideixen i poden ser actualitzats i executats aquests documents. El programari
 que fa possible compartir un conjunt de quaderns Jupyter amb una classe o un grup
-de persones col·laboradores és \href{https://jupyter.org/hub}{Jupyter Hub} \cite{JupyterHub}.
+de persones col·laboradores és \href{https://jupyter.org/hub}{JupyterHub} \cite{JupyterHub}.
 
-El que sol·licitem a la Universitat de València és que dedique els recursos
-de computació necessaris per instal·lar i executar Jupyter Hub, de tal manera que qualsevol
-membre de la comunitat universitàira puga connectar-se a les instàncies prèviament
-definides pel professorat. Com a exemple, es pot accedir a l'enllaç següent, que
-inicia un entorn de computació virtual accessible des del navegador i que conté un parell
-de quaderns Jupyter:
+Si la Universitat de València tinguera instal·lat i en execució un JupyterHub, qualsevol
+membre de la comunitat universitàira podria connectar-se, des de qualsevol ordinador amb
+internet, i executar els seus treballs en entorns comuns, prèviament definits pel
+professorat.
 
-\href{https://mybinder.org/v2/gh/IgnasiLucas/Khi2/soca}{https://mybinder.org/v2/gh/IgnasiLucas/Khi2/soca}
-
-L'enllaç anterior ens condueix a una instància de Jupyter Hub que ens ofereix gratuïtament
-l'empresa MyBinder. Si la Universitat de València oferira el mateix servei, gaudiríem d'una
-major estabilitat del servei (que a vegades se satura) i d'un accés privat amb identificació
-d'usuària. L'ús de les instàncies de MyBinder s'ha intentat en cursos anteriors, però sol
-presentar problemes de saturació del servei.
+Existeixen solucions comercials, com \href{https://anaconda.cloud/}{Anaconda Cloud}. Però
+es tracta de programari lliure, i si la Universitat de València gestionara el seu propi
+JupyterHub, estudiants i professorat podríem utilitzar els nostres comptes de la Universitat
+per accedir al servei, sense haver d'acceptar els termes i condicions d'una empresa, ni
+patir les limitacions pròpies dels comptes gratuïts dels serveis comercials.
 
 \subsection{Servidor de \textsf{git}}
 El programa \textsf{git} és un sistema de control de versions. S'utilitza intensament en
@@ -219,8 +216,8 @@ situacions com aquella popularitzada en la tira còmica
 guarda registre de qui va introduir quins canvis i quan, la qual cosa facilita molt la
 col·laboració o l'edició conjunta de documents.
 
-Tot i haver estat concebut per ajudar al desenvolupament de programari, resulta que \textsf{git}
-troba aplicació en qualsevol conjunt de documents que han de ser editats al llarg del temps,
+Tot i haver estat concebut per ajudar al desenvolupament de programari, \textsf{git}
+té aplicació en qualsevol conjunt de documents que han de ser editats al llarg del temps,
 per una o més persones. En l'àmbit universitari, aquests documents poden ser: un treball de
 classe qualsevol, una tesi, o uns materials didàctics. Tot i que la corba d'aprenentatge no és
 suau, un coneixement bàsic de \textsf{git} permet gaudir de la major part dels seus beneficis.

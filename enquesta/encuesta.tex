@@ -1,0 +1,90 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{booktabs}
+\usepackage[colorlinks=true]{hyperref}
+\title{Encuesta sobre servicios generales informáticos para la docencia}
+\hyphenation{Python}
+
+\begin{document}
+\maketitle
+En la Facultad de Ciencias Biológicas, cada vez es más habitual que en alguna
+asignatura se utilice un lenguaje de programación, como R o Python,
+para realizar ejercicios o prácticas con ordenador. Estas iniciativas individuales
+están con frecuencia relacionadas con una concepción abierta de la educación y de
+la ciencia \cite{Schlagwein2017}, y contribuyen a proporcionar habilidades
+computacionales básicas a estudiantes de cualquier grado \cite{Vee2017}. Sin embargo,
+la adopción de lenguajes de programación en nuestras aulas se encuentra con
+dificultades y necesita un apoyo institucional por parte de la Universidad.
+
+El objetivo de esta encuesta es compartir esta percepción con el profesorado de todos
+los centros de la Universidad de Valencia (UV en adelante) y recoger el apoyo
+necesario para solicitar la puesta en marcha de servicios informáticos generales
+que faciliten la adopción de lenguajes de programación en la enseñanza de cualquier
+materia y contribuyan a la educación abierta.
+
+Los datos recogidos son completamente anónimos y no se compartirán con terceros.
+Sólo serán publicados los estadísticos agregados, en un informe que podréis consultar
+en la web... Si alguna persona está interesada en ayudar a coordinar una solicitud
+inter-facultativa de los servicios informáticos generales propuestos, puede ponerse
+en contacto con...
+
+\begin{enumerate}
+\item Centro al que pertenece:
+\item Género:
+\item Edat:
+   \begin{enumerate}
+   \item Menos de 31.
+   \item 31-40.
+   \item 41-50.
+   \item 51-60.
+   \item Más de 60.
+   \end{enumerate}
+\end{enumerate}
+
+Marca el grado de conformidad con cada una de las afirmaciones siguientes, entre cero
+(en completo desacuerdo) y cinco (completamente de acuerdo).
+
+{\small
+\begin{tabular}{|r|p{9cm}|c|c|c|c|c|c|}
+\toprule
+&&0&1&2&3&4&5\\
+\midrule
+4&Tengo buenos conocimientos de al menos un lenguaje de programación.&&&&&&\\
+\midrule
+5&La enseñanza de las materias en las que participo podría mejorar con la adopción de un lenguaje de programación.&&&&&&\\
+\midrule
+6&Participo o podría participar activamente en la docencia de prácticas con ordenador.&&&&&&\\
+\midrule
+7&Estaría dispuesto o dispuesta a recibir formación en la aplicación de la programación informática a la docencia.&&&&&&\\
+\midrule
+8&Las aulas de informática con las que contamos disponen de Linux y de todos los programas que necesitamos.&&&&&&\\
+\midrule
+9&La mayor parte de programas informáticos que enseñamos a utilizar son software libre.&&&&&&\\
+\midrule
+10&Los y las estudiantes pueden instalar fácilmente en sus ordenadores los programas informáticos que utilizamos en el aula.&&&&&&\\
+\midrule
+11&Conozco y utilizo con cierta frecuencia documentos dinámicos de Rmarkdown en el entorno de RStudio \cite{RStudio}.&&&&&&\\
+\midrule
+12&Conozco y utilizo con cierta frecuencia los cuadernos Jupyter (Jupyter Notebooks) \cite{Barba2019}.&&&&&&\\
+\midrule
+13&La UV debería ofrecer un servidor de RStudio para que estudiantes y profesorado pueda conectarse remotamente.&&&&&&\\
+\midrule
+14&La UV debería ofrecer un servidor JupyterHub de cuadernos Jupyter \cite{JupyterHub}.&&&&&&\\
+\midrule
+15&La UV debería ofrecer acceso por \textsf{ssh} a un servidor de cálculo para estudiantes.&&&&&&\\
+\midrule
+16&La UV debería alojar su propio servidor de repositorios de \textsf{git} (e.g., Gitlab) para estudiantes y profesorado \cite{Paderborn2023,PereiraBraga2023}.&&&&&&\\
+\midrule
+17&La UV debería mantener un nodo propio de una red social federada, como Mastodon, y ofrecer cuentas a toda la comunidad, igual que con el correo electrónico \cite{Brembs2023,mastodon}.&&&&&&\\
+\bottomrule
+\end{tabular}
+}
+
+Si quieres sugerir algún otro servicio o hacer algún comentario, puedes hacerlo aquí:
+\vspace*{3cm}
+
+\bibliography{../references}
+\bibliographystyle{ieeetr}
+\end{document}

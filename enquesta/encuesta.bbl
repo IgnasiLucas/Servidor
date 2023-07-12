@@ -1,0 +1,57 @@
+\begin{thebibliography}{1}
+
+\bibitem{Schlagwein2017}
+D.~Schlagwein, K.~Conboy, J.~Feller, J.~Leimeister, and L.~Morgan,
+  ``“openness” with and without information technology: A framework and a
+  brief history,'' {\em Journal of Information Technology}, vol.~32, no.~4,
+  pp.~297--305, 2017.
+\newblock \url{https://doi.org/10.1057/s41265-017-0049-3}.
+
+\bibitem{Vee2017}
+A.~Vee, {\em {Coding Literacy. How computer programming is changing writing}}.
+\newblock The MIT Press, 2017.
+
+\bibitem{RStudio}
+Posit, ``Teaching a new generation of r users.''
+  \url{https://education.rstudio.com/teach/}, 2023.
+\newblock Accedit el 12 de juliol de 2023.
+
+\bibitem{Barba2019}
+L.~Barba, L.~Barker, D.~Blank, J.~Brown, A.~Downey, T.~George, L.~Heagy,
+  K.~Mandli, J.~Moore, D.~Lippert, K.~Niemeyer, R.~Watkins, R.~West, E.~Wickes,
+  C.~Willing, and M.~Zingale, {\em {Teaching and learning with Jupyter}}.
+\newblock Bookdown, 2019.
+\newblock \url{https://jupyter4edu.github.io}.
+
+\bibitem{JupyterHub}
+{Project Jupyter}, ``Jupyter hub.'' \url{https://jupyter.org/hub}, 2023.
+\newblock Accedit el 12 de juliol de 2023.
+
+\bibitem{Paderborn2023}
+U.~of~Paderborn, ``Git server.''
+  \url{https://cs.uni-paderborn.de/en/irb/services/git}, 2023.
+\newblock [Exemple de servidor de git universitari; accedit el 12 de juliol de
+  2023].
+
+\bibitem{PereiraBraga2023}
+P.~Pereira~Braga, K.~Hébert, E.~Hudgins, E.~Scott, B.~Edwards,
+  L.~Sánchez~Reyes, M.~Grainger, V.~Foroughirad, F.~Hillemann, A.~Binley,
+  C.~Brookson, K.~Gaynor, S.~Shafiei~Sabet, A.~Güncan, H.~Weierbach, D.~Gomes,
+  and R.~Crystal-Ornelas, ``Not just for programmers: How github can accelerate
+  collaborative and reproducible research in ecology and evolution,'' {\em
+  Methods in Ecology and Evolution}, vol.~14, no.~6, pp.~1364--1380, 2023.
+\newblock \url{https://doi.org/10.1111/2041-210X.14108}.
+
+\bibitem{Brembs2023}
+B.~Brembs, A.~Lenardic, and L.~Chan, ``Mastodon: a move to publicly owned
+  scholarly knowledge,'' {\em Nature}, vol.~614, p.~624, 2023.
+\newblock \url{https://www.nature.com/articles/d41586-023-00486-3}.
+
+\bibitem{mastodon}
+L.~Dobusch, ``A call for action. universities of the world, join the
+  fediverse!.''
+  \url{https://netzpolitik.org/2023/a-call-to-action-universities-of-the-world-into-the-fediverse/},
+  2023.
+\newblock [Accedit el 12 de juliol de 2023].
+
+\end{thebibliography}

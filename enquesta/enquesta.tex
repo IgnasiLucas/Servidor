@@ -1,154 +1,89 @@
 \documentclass[a4paper,12pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[spanish,catalan]{babel}
+\usepackage[catalan]{babel}
 \usepackage{booktabs}
 \usepackage[colorlinks=true]{hyperref}
-\title{Enquesta sobre serveis informàtics generals i per a la docència}
+\title{Enquesta sobre serveis informàtics generals per a la docència}
+\hyphenation{Python}
 
 \begin{document}
-\section{Introducció}
-En el context de la progressiva transformació digital de la societat,
-l'Equip Deganal de la Facultat de Ciències Biològiques ha identificat
-algunes necessitats digitals en la docència que la Universitat de València
-encara no cobreix. Amb el propòsit de compartir i elaborar una proposta
-comuna que puga beneficiar a tots els centres de la Universitat, volem
-saber, mitjançant aquesta enquesta, si la comunitat docent comparteix
-en general la percepció d'aquestes o d'altres necessitats que pogueren
-ser adreçades des del Servei d'Informàtica.
+\maketitle
+A la Facultat de Ciències Biològiques, cada vegada és més habitual que en alguna
+assignatura s'utilitze un llenguatge de programació, com R o Python,
+per realitzar exercicis o pràctiques amb ordinador. Aquestes iniciatives individuals
+estan sovint arrelades en una concepció oberta de l'educació i de la ciència \cite{Schlagwein2017},
+i contribueixen a proporcionar habilitats computacionals bàsiques a estudiants de
+qualsevol grau \cite{Vee2017}. Tanmateix, l'adopció de llenguatges de programació en
+les nostres aules es troba amb dificultats i necessita d'un recolzament institucional
+per part de la Universitat.
 
-\section{Dades personals}
+L'objectiu d'aquesta enquesta és compartir aquesta percepció amb el professorat de tots
+els centres de la Universitat de València (UV en avant) i arreplegar el suport necessari per sol·licitar
+la posada en marxa de serveis informàtics generals que faciliten l'adopció de llenguatges de
+programació en l'ensenyança de qualsevol matèria i contribuïsquen a l'educació oberta.
+
+Les dades arreplegades són completament anònimes i no seran compartides amb tercers. Només
+seran publicats els estadístics de resum, en un informe que podreu consultar al web...
+Si alguna persona està interessada en ajudar a coordinar una sol·licitud inter-facultativa
+dels serveis informàtics generals proposats, pot posar-se en contacte amb...
+
 \begin{enumerate}
 \item Centre al qual pertany:
 \item Gènere:
 \item Edat:
-\item Cos professional:
-\end{enumerate}
-
-\section{Servidor de càlcul per a docència}
-\begin{enumerate}
-\item A les matèries en què imparteixes docència, feu servir aula d'informàtica? (Si la resposta
-és negativa, passa a la secció següent.)
    \begin{enumerate}
-   \item Sí.
-   \item No.
-   \end{enumerate}
-\item A l'aula d'informàtica, podries executar programes docents en Linux, si fóra necessari?
-   \begin{enumerate}
-   \item Sí.
-   \item No.
-   \end{enumerate}
-\item Fas servir algun llenguatge de programació? En cas afirmatiu, quin?
-   \begin{enumerate}
-   \item Sí.
-   \item No.
-   \end{enumerate}
-\item Algunes veus, com la de \href{https://youtu.be/mGc6clf_Wt4}{Mark Guzdial} advoquen per l'ús dels
-llenguatges de programació en la docència de qualsevol altra matèria, com a eina per manipular i
-comprendre el món que ens envolta. Sobre el paper dels llenguatges de programació en la docència,
-amb quina afirmació t'identifiques més? (Pots marcar-ne més d'una).
-   \begin{enumerate}
-   \item A les matèries que impartisc, la programació informàtica no té cap aplicació.
-   \item Crec que seria útil, però no tinc temps de preparar-ho.
-   \item Estaria disposat o disposada a rebre formació per introduir algun llenguatge de programació en les meues classes.
-   \item Ocasionalment utilitze algun llenguatge de programació com a mitjà per ensenyar la meua matèria.
-   \item Utilitze amb freqüència algun llenguatge de programació per exemplificar o demostrar conceptes.
-   \item Altra:
-   \end{enumerate}
-
-\item En molts àmbits professionals i acadèmics, el programari lliure ha guanyat popularitat
-en les últimes dècades. Quin ús fas del programari lliure a l'aula d'informàtica?
-   \begin{enumerate}
-   \item No concec programari lliure que puga satisfer les necessitats de la docència que impartisc.
-   \item Preferisc utilitzar programari privatiu, per les garanties que ofereix i altres avantatges.
-   \item Normalment utilitze programari lliure instal·lat a l'aula d'informàtica.
-   \item Normalment utilitze programari lliure que els i les alumnes instal·len als seus ordinadors.
-   \item Utilitzem programari lliure en un servidor remot (\emph{cloud computing}) del nostre centre.
-   \item Altra:
-   \end{enumerate}
-
-\item Sobre l'ús de servidors de càlcul, o computació en el núvol, quina afirmació reflexa
-millor la situació de la docència en la qual participes?
-   \begin{enumerate}
-   \item No utilitze ni tampoc necessite cap servidor de càlcul remot.
-   \item No utilitze cap servidor de càlcul remot per a docència, però ho faria si estiguera disponible.
-   \item Al nostre centre disposem d'un servidor de càlcul al qual els i les estudiants poden connectar-se remotament.
-   \item En ocasions contractem serveis de computació al núvol per a finalitats docents.
-   \item Altra:
-   \end{enumerate}
-
-\item L'ús creixent de llenguatges de programació en l'ensenyança va acompanyat per la
-popularització de diferents entorns o plataformes que ho faciliten, com són 
-\href{https://education.rstudio.com/teach/}{RStudio} i
-\href{https://jupyter4edu.github.io/jupyter-edu-book/}{Jupyter Notebooks}.
-Quin ús fas d'aquests programes en l'ensenyança? (Pots marcar més d'una opció).
-   \begin{enumerate}
-   \item No n'havia sentit parlar.
-   \item N'he sentit parlar, però no els faig servir.
-   \item Faig servir RStudio (o Jupyter Notebooks) en la meua investigació, però no en la docència.
-   \item Conec el potencial d'aquestes eines en l'ensenyament i estaria disposada a rebre formació sobre el tema.
-   \item Utilitze RStudio (o Jupyter Notebooks) a l'aula d'informàtica.
-   \item Si la Universitat oferira un servidor de RStudio, probablement l'utilitzaria en la docència.
-   \item Si la Universitat oferira un servidor de Jupyter Notebooks (JupyterHub), probablement l'utilitzaria en la docència.
-   \item Altra:
+   \item Menys de 30.
+   \item 30-40.
+   \item 40-50.
+   \item 50-60.
+   \item Més de 60.
    \end{enumerate}
 \end{enumerate}
 
-\section{Control de versions amb \textsf{git}}
-El programa \href{https://git-scm.com/}{git} és el sistema de control de versions més popular
-actualment, i s'utilitza des de fa temps en projectes col·laboratius d'elaboració de documents,
-com per exemple (\href{https://doi.org/10.1111/2041-210X.14108}{però no sols}) en el desenvolupament de programari.
-\begin{enumerate}
-\item Quina experiència tens amb git o amb un altre sistema de control de versions? (Pots marcar més d'una opció.)
-   \begin{enumerate}
-   \item No els he utilitzat mai, i no em fan falta.
-   \item No els he utilitzat mai, però tinc curiositat i m'agradaria rebre formació sobre el tema.
-   \item He utilitzat control de versions al meu propi ordinador, però no en la docència.
-   \item Utilitze control de versions en col·laboracions, però no en docència.
-   \item Utilitze control de versions en l'elaboració de materials didàctics.
-   \item Utilitze control de versions i repositoris remots (Github, Gitlab, etc.) en la interacció amb alumnes.
-   \end{enumerate}
+Marca el grau de conformitat amb cadascuna de les afirmacions següents, entre 
+zero (en complet desacord) i cinc (completament d'acord).
 
-\item Quan vols compartir una carpeta amb materials didàctics, de quina manera ho fas? (Marca totes les que utilitzes).
-   \begin{enumerate}
-   \item A través del núvol de la Universitat de València.
-   \item A través de l'Aula Virtual.
-   \item A vegades, a través de serveis externs (Dropbox, etc.).
-   \item A vegades, a través d'un servidor de git, com \href{https://github.com/}{Github}.
-   \item Altres:
-   \end{enumerate}
+{\small
+\begin{tabular}{|r|p{9cm}|c|c|c|c|c|c|}
+\toprule
+&&0&1&2&3&4&5\\
+\midrule
+4&Tinc bons coneixements d'almenys un llenguatge de programació.&&&&&&\\
+\midrule
+5&L'ensenyança de les matèries en què participe podria millorar amb l'adopció d'un llenguatge de programació.&&&&&&\\
+\midrule
+6&Participe o podria participar activament en la docència de pràctiques amb ordinador.&&&&&&\\
+\midrule
+7&Estaria disposat o disposada a rebre formació en l'aplicació de la programació informàtica a la docència.&&&&&&\\
+\midrule
+8&Les aules d'informàtica amb què comptem disposen de Linux i de tots els programes que necessitem.&&&&&&\\
+\midrule
+9&La major part de programes informàtics que ensenyem a utilitzar són programari lliure.&&&&&&\\
+\midrule
+10&Els i les estudiants poden instal·lar fàcilment als seus ordinadors els programes informàtics que utilitzem a l'aula.&&&&&&\\
+\midrule
+11&Conec i utilitze amb certa freqüència documents dinàmics d'Rmarkdown en l'entorn d'RStudio \cite{RStudio}.&&&&&&\\
+\midrule
+12&Conec i utilitze amb certa freqüència els quaderns Jupyter (Jupyter Notebooks) \cite{Barba2019}.&&&&&&\\
+\midrule
+13&La UV hauria d'oferir un servidor d'RStudio perquè estudiants i professorat puguen connectar-se remotament.&&&&&&\\
+\midrule
+14&La UV hauria d'oferir un servidor JupyterHub de quaderns Jupyter \cite{JupyterHub}.&&&&&&\\
+\midrule
+15&La UV hauria d'oferir accés per \textsf{ssh} a un servidor de càlcul per a estudiants.&&&&&&\\
+\midrule
+16&La UV hauria d'allotjar el seu propi servidor de repositoris de \textsf{git} (e.g., Gitlab) per a professorat i estudiants \cite{Paderborn2023,PereiraBraga2023}.&&&&&&\\
+\midrule
+17&La UV hauria de mantenir un node propi d'una xarxa social federada, com Mastodon, i oferir comptes a tota la comunitat, igual que amb el correu electrònic \cite{Brembs2023,mastodon}.&&&&&&\\
+\bottomrule
+\end{tabular}
+}
 
-\item Si la Universitat oferira un servidor de \textsf{git} propi (Gitlab), el faries servir?
-   \begin{enumerate}
-   \item Probablement no, perquè no tinc la necessitat.
-   \item Probablement no, perquè amb Github tinc prou.
-   \item Probablement sí, sempre que rebera la formació adequada.
-   \item Segurament sí, per poder triar amb qui compartir les carpetes.
-   \item Segurament sí, perquè preferisc utilitzar serveis propis de la Universitat que serveis externs.
-   \item Altra:
-   \end{enumerate}
-\end{enumerate}
+Si vols suggerir algun altre servei o fer algun comentari, pots fer-ho ací:
+\vspace*{3cm}
 
-\section{Altres serveis generals}
-Recentment, \href{https://netzpolitik.org/2023/a-call-to-action-universities-of-the-world-into-the-fediverse/#!}{s'ha proposat}
-que les universitats gestionen els seus propis servidors o nodes de les xarxes socials federades (Fedivers), com ara
-\href{https://doi.org/10.1038/d41586-023-00486-3}{Mastodon}. Sobre l'ús acadèmic de les xarxes socials:
-\begin{enumerate}
-\item Per a la teua activitat docent i investigadora, participes en alguna xarxa social?
-   \begin{enumerate}
-   \item Sí.
-   \item No.
-   \end{enumerate}
-\item Si la resposta és afirmativa, quina?
-\item Creus que la Universitat de València hauria de mantenir el seu node de Mastodon?
-   \begin{enumerate}
-   \item Sí.
-   \item No.
-   \item NS/NC.
-   \end{enumerate}
-
-\item T'agradaria suggerir algun altre servei informàtic general que trobes a faltar?
-\end{enumerate}
-
+\bibliography{../references}
+\bibliographystyle{ieeetr}
 \end{document}
 

@@ -1,0 +1,89 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[catalan]{babel}
+\usepackage{booktabs}
+\usepackage[colorlinks=true]{hyperref}
+\title{Enquesta sobre serveis informàtics generals per a la docència}
+\hyphenation{Python}
+
+\begin{document}
+\maketitle
+A la Facultat de Ciències Biològiques, cada vegada és més habitual que en alguna
+assignatura s'utilitze un llenguatge de programació, com R o Python,
+per realitzar exercicis o pràctiques amb ordinador. Aquestes iniciatives individuals
+estan sovint arrelades en una concepció oberta de l'educació i de la ciència \cite{Schlagwein2017},
+i contribueixen a proporcionar habilitats computacionals bàsiques a estudiants de
+qualsevol grau \cite{Vee2017}. Tanmateix, l'adopció de llenguatges de programació en
+les nostres aules es troba amb dificultats i necessita d'un recolzament institucional
+per part de la Universitat.
+
+L'objectiu d'aquesta enquesta és compartir aquesta percepció amb el professorat de tots
+els centres de la Universitat de València (UV en avant) i arreplegar el suport necessari per sol·licitar
+la posada en marxa de serveis informàtics generals que faciliten l'adopció de llenguatges de
+programació en l'ensenyança de qualsevol matèria i contribuïsquen a l'educació oberta.
+
+Les dades arreplegades són completament anònimes i no seran compartides amb tercers. Només
+seran publicats els estadístics de resum, en un informe que podreu consultar al web...
+Si alguna persona està interessada en ajudar a coordinar una sol·licitud inter-facultativa
+dels serveis informàtics generals proposats, pot posar-se en contacte amb...
+
+\begin{enumerate}
+\item Centre al qual pertany:
+\item Gènere:
+\item Edat:
+   \begin{enumerate}
+   \item Menys de 30.
+   \item 30-40.
+   \item 40-50.
+   \item 50-60.
+   \item Més de 60.
+   \end{enumerate}
+\end{enumerate}
+
+Marca el grau de conformitat amb cadascuna de les afirmacions següents, entre 
+zero (en complet desacord) i cinc (completament d'acord).
+
+{\small
+\begin{tabular}{|r|p{9cm}|c|c|c|c|c|c|}
+\toprule
+&&0&1&2&3&4&5\\
+\midrule
+4&Tinc bons coneixements d'almenys un llenguatge de programació.&&&&&&\\
+\midrule
+5&L'ensenyança de les matèries en què participe podria millorar amb l'adopció d'un llenguatge de programació.&&&&&&\\
+\midrule
+6&Participe o podria participar activament en la docència de pràctiques amb ordinador.&&&&&&\\
+\midrule
+7&Estaria disposat o disposada a rebre formació en l'aplicació de la programació informàtica a la docència.&&&&&&\\
+\midrule
+8&Les aules d'informàtica amb què comptem disposen de Linux i de tots els programes que necessitem.&&&&&&\\
+\midrule
+9&La major part de programes informàtics que ensenyem a utilitzar són programari lliure.&&&&&&\\
+\midrule
+10&Els i les estudiants poden instal·lar fàcilment als seus ordinadors els programes informàtics que utilitzem a l'aula.&&&&&&\\
+\midrule
+11&Conec i utilitze amb certa freqüència documents dinàmics d'Rmarkdown en l'entorn d'RStudio \cite{RStudio}.&&&&&&\\
+\midrule
+12&Conec i utilitze amb certa freqüència els quaderns Jupyter (Jupyter Notebooks) \cite{Barba2019}.&&&&&&\\
+\midrule
+13&La UV hauria d'oferir un servidor d'RStudio perquè estudiants i professorat puguen connectar-se remotament.&&&&&&\\
+\midrule
+14&La UV hauria d'oferir un servidor JupyterHub de quaderns Jupyter \cite{JupyterHub}.&&&&&&\\
+\midrule
+15&La UV hauria d'oferir accés per \textsf{ssh} a un servidor de càlcul per a estudiants.&&&&&&\\
+\midrule
+16&La UV hauria d'allotjar el seu propi servidor de repositoris de \textsf{git} (e.g., Gitlab) per a professorat i estudiants \cite{Paderborn2023,PereiraBraga2023}.&&&&&&\\
+\midrule
+17&La UV hauria de mantenir un node propi d'una xarxa social federada, com Mastodon, i oferir comptes a tota la comunitat, igual que amb el correu electrònic \cite{Brembs2023,mastodon}.&&&&&&\\
+\bottomrule
+\end{tabular}
+}
+
+Si vols suggerir algun altre servei o fer algun comentari, pots fer-ho ací:
+\vspace*{3cm}
+
+\bibliography{../references}
+\bibliographystyle{ieeetr}
+\end{document}
+

@@ -1,16 +1,5 @@
 \begin{thebibliography}{1}
 
-\bibitem{Schlagwein2017}
-D.~Schlagwein, K.~Conboy, J.~Feller, J.~Leimeister, and L.~Morgan,
-  ``“openness” with and without information technology: A framework and a
-  brief history,'' {\em Journal of Information Technology}, vol.~32, no.~4,
-  pp.~297--305, 2017.
-\newblock \url{https://doi.org/10.1057/s41265-017-0049-3}.
-
-\bibitem{Vee2017}
-A.~Vee, {\em {Coding Literacy. How computer programming is changing writing}}.
-\newblock The MIT Press, 2017.
-
 \bibitem{RStudio}
 Posit, ``Teaching a new generation of r users.''
   \url{https://education.rstudio.com/teach/}, 2023.

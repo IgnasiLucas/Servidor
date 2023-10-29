@@ -7,6 +7,9 @@
 \title{Encuesta sobre servicios generales informáticos para la docencia}
 \hyphenation{Python}
 
+\newcounter{preg}[section]
+\renewcommand{\theenumi}{\arabic{section}.\arabic{preg}}
+
 \begin{document}
 \maketitle
 Un aspecto importante de la transformación digital de la sociedad actual es el uso creciente
@@ -30,11 +33,14 @@ contestéis las siguientes preguntas, que no os ocuparán más de 5 minutos. Las
 individuales serán completamente anónimas y no serán compartidas con terceros. Los estadísticos
 de resumen serán publicados en la página web del Servicio de Informática.
 
+\section{Datos personales}
+\setcounter{preg}{1}
+
 \begin{enumerate}
-\item Centro al que pertenece:
-\item Categoría profesional:
-\item Género:
-\item Edat:
+\item \stepcounter{preg} Centro al que pertenece:
+\item \stepcounter{preg} Categoría profesional:
+\item \stepcounter{preg} Género:
+\item \stepcounter{preg} Edat:
    \begin{enumerate}
    \item Menos de 31.
    \item 31-40.
@@ -42,65 +48,73 @@ de resumen serán publicados en la página web del Servicio de Informática.
    \item 51-60.
    \item Más de 60.
    \end{enumerate}
+\end{enumerate}
 
-\item Participas en la docencia de prácticas con ordenador?
+\section{Participación en la docencia de prácticas con cordenador}
+\begin{enumerate}
+\stepcounter{preg}
+\item \stepcounter{preg} Participas en la docencia de prácticas con ordenador?
    \begin{itemize}
    \item Sí.
    \item No.
    \item Ahora no, pero lo he hecho o podría hacerlo.
    \end{itemize}
 
-   \begin{enumerate}
-   \item Los programas que se usan en esas prácticas ¿son software libre?
+\item \stepcounter{preg} Los programas que se usan en esas prácticas ¿son software libre?
       \begin{itemize}
       \item Sí.
       \item No.
       \end{itemize}
 
-   \item ¿Los y las estudiantes tienen facilidad para instalar dichos programas en sus ordenadores?
+\item \stepcounter{preg} ¿Los y las estudiantes tienen facilidad para instalar dichos programas en sus ordenadores?
       \begin{itemize}
       \item Sí.
       \item No.
       \item Depende del sistema operativo.
       \end{itemize}
 
-   \item ¿Podrías decir cuáles son los principales programas utilizados en las prácticas con ordenador?
+\item \stepcounter{preg} ¿Podrías decir cuáles son los principales programas utilizados en las prácticas con ordenador?
    \vspace*{1cm}
 
-   \item ¿Las aulas de informática disponen de ese software instalado?
+\item \stepcounter{preg} ¿Las aulas de informática disponen de ese software instalado?
       \begin{itemize}
       \item Sí, en MS Windows.
       \item Sí, en Linux.
       \item No.
       \end{itemize}
 
-   \item Comenta brevemente qué incidencias has tenido con estos programas, si ha habido alguna.
-      \vspace*{1cm}
-   \end{enumerate}
+\item \stepcounter{preg} Comenta brevemente qué incidencias has tenido con estos programas, si ha habido alguna.
+\vspace*{1cm}
+\end{enumerate}
 
-\item ¿Tienes conocimiento de algún lenguaje de programación?
+\section{Lenguajes de programación}
+\stepcounter{preg}
+\begin{enumerate}
+\item \stepcounter{preg} ¿Tienes conocimiento de algún lenguaje de programación?
    \begin{itemize}
    \item Sí.
    \item No.
    \end{itemize}
 
-   \begin{enumerate}
-   \item ¿Cuáles?
-      \begin{itemize}
-      \item Python.
-      \item R.
-      \item Julia.
-      \item Go.
-      \item C/C++.
-      \item Perl.
-      \item Pascal.
-      \item Bash.
-      \item Awk.
-      \item Otros:
-      \end{itemize}
-   \end{enumerate}
+\item ¿Cuáles?
+   \begin{itemize}
+   \item Python.
+   \item R.
+   \item Julia.
+   \item Go.
+   \item C/C++.
+   \item Perl.
+   \item Pascal.
+   \item Bash.
+   \item Awk.
+   \item Otros:
+   \end{itemize}
+\end{enumerate}
 
-\item ¿Conoces y utilizas el entorno RStudio \cite{RStudio}?
+\section{Sobre RStudio}
+\stepcounter{preg}
+\begin{enumerate}
+\item \stepcounter{preg} ¿Conoces y utilizas el entorno RStudio \cite{RStudio}?
    \begin{itemize}
    \item Sí, lo conozco, pero no lo utilizo.
    \item Sí, lo utilizo, pero no en la docencia.
@@ -108,25 +122,27 @@ de resumen serán publicados en la página web del Servicio de Informática.
    \item No, ni lo conozco ni lo utilizo.
    \end{itemize}
 
-   \begin{enumerate}
-   \item Si lo haces, ¿conoces y utilizas los documentos dinámicos de tipo Rmarkdown?
-      \begin{itemize}
-      \item Sí, los conozco, pero no los utilizo.
-      \item Sí, los utilizo, pero no en la docencia.
-      \item Sí, los utilizo, incluso para la docencia.
-      \item No, ni los conozco ni los utilizo
-      \end{itemize}
+\item \stepcounter{preg} Si lo haces, ¿conoces y utilizas los documentos dinámicos de tipo Rmarkdown?
+   \begin{itemize}
+   \item Sí, los conozco, pero no los utilizo.
+   \item Sí, los utilizo, pero no en la docencia.
+   \item Sí, los utilizo, incluso para la docencia.
+   \item No, ni los conozco ni los utilizo
+   \end{itemize}
 
-   \item ¿Crees que la UV debería ofrecer un servidor de RStudio para su uso remoto en la docencia,
-         por parte de estudiantes y profesorado?
-      \begin{itemize}
-      \item Sí.
-      \item No.
-      \item Indiferente.
-      \end{itemize}
-   \end{enumerate}
+\item \stepcounter{preg} ¿Crees que la UV debería ofrecer un servidor de RStudio para su uso remoto en la docencia,
+      por parte de estudiantes y profesorado?
+   \begin{itemize}
+   \item Sí.
+   \item No.
+   \item Indiferente.
+   \end{itemize}
+\end{enumerate}
 
-\item ¿Conoces y utilizas el entorno Jupyter (Jupyter notebooks o Jupyter lab) \cite{Barba2019}?
+\section{Jupyter notebooks}
+\stepcounter{preg}
+\begin{enumerate}
+\item \stepcounter{preg} ¿Conoces y utilizas el entorno Jupyter (Jupyter notebooks o Jupyter lab) \cite{Barba2019}?
    \begin{itemize}
    \item Sí, lo conozco, pero no lo utilizo.
    \item Sí, lo utilizo, aunque no para la docencia.
@@ -134,18 +150,21 @@ de resumen serán publicados en la página web del Servicio de Informática.
    \item No, ni lo conozco ni lo utilizo.
    \end{itemize}
 
-   \begin{enumerate}
-   \item ¿Crees que la UV debería ofrecer un servidor Jupyter Hub para uso remoto en la docencia,
-         por parte estudiantes y profesorado? \cite{JupyterHub}.
-      \begin{itemize}
-      \item Sí.
-      \item No.
-      \item Indiferente.
-      \end{itemize}
-   \end{enumerate}
+\item ¿Crees que la UV debería ofrecer un servidor Jupyter Hub para uso remoto en la docencia,
+      por parte estudiantes y profesorado? \cite{JupyterHub}.
+   \begin{itemize}
+   \item Sí.
+   \item No.
+   \item Indiferente.
+   \end{itemize}
+\end{enumerate}
 
-\item ¿Qué ventajas crees que tendría sustituir una aplicación de interfaz gráfica por un \emph{script}
-      (documento de texto plano ejecutable) de licencia abierta en la docencia de prácticas con ordenador?
+\section{Sobre el uso de lenguajes interpretados en las prácticas con ordenador}
+\stepcounter{preg}
+\begin{enumerate}
+\item \stepcounter{preg} ¿Qué ventajas crees que tendría sustituir una aplicación de interfaz gráfica
+      por un \emph{script} (documento de texto plano ejecutable) de licencia abierta en la docencia de
+      prácticas con ordenador?
    \begin{itemize}
    \item Reproducibilidad.
    \item Portabilidad a cualquier sistema operativo.
@@ -157,7 +176,7 @@ de resumen serán publicados en la página web del Servicio de Informática.
    \item Ninguna.
    \end{itemize}
 
-\item ¿Qué desventajas o dificultades conllevaría sustituir una aplicación de interfaz gráfica por un
+\item \stepcounter{preg} ¿Qué desventajas o dificultades conllevaría sustituir una aplicación de interfaz gráfica por un
    \emph{script} de licencia abierta en la docencia de prácticas con ordenador?
    \begin{itemize}
    \item La necesidad de aprender el lenguaje de programación por parte del profesorado.
@@ -167,19 +186,21 @@ de resumen serán publicados en la página web del Servicio de Informática.
    \item Ninguna.
    \end{itemize}
 
-\item ¿Te gustaría recibir información sobre cómo aplicar los lenguajes de programación a la
+\item \stepcounter{preg} ¿Te gustaría recibir información sobre cómo aplicar los lenguajes de programación a la
       docencia?
    \begin{itemize}
    \item Sí.
    \item No.
    \end{itemize}
 
-   \begin{enumerate}
-   \item Si hay algún lenguaje de programación que te gustaría aprender, ¿cuál es?
-   \vspace*{1cm}
-   \end{enumerate}
+\item Si hay algún lenguaje de programación que te gustaría aprender, ¿cuál es?
+\vspace*{1cm}
+\end{enumerate}
 
-\item ¿Conoces algún sistema de control de versiones (e.g., \textsf{git}, Subversion, Mercurial) y
+\section{Sobre los sistemas de control de versiones}
+\stepcounter{preg}
+\begin{enumerate}
+\item \stepcounter{preg} ¿Conoces algún sistema de control de versiones (e.g., \textsf{git}, Subversion, Mercurial) y
       para qué sirven?
    \begin{itemize}
    \item Sí, pero no los uso.
@@ -188,47 +209,49 @@ de resumen serán publicados en la página web del Servicio de Informática.
    \item No.
    \end{itemize}
 
-   \begin{enumerate}
-   \item Siendo los materiales docentes documentos generalmente compartidos y actualizados con cierta
-         frecuencia, ¿por qué razones crees que no suelen contar con un sistema de control de versiones?
-      \begin{itemize}
-      \item En realidad, solo se comparten ocasionalmente y no necesitamos harmonizar las versiones.
-      \item Por desconocimiento de los sistemas de control de versiones por parte del profesorado.
-      \item Porque la UV no ofrece ningún repositorio remoto donde mantener y compartir los materiales
-            docentes.
-      \item Porque los materiales docentes incluyen imágenes o fragmentos protegidos con licencias
-            privativas que no pueden compartirse abiertamente.
-      \item Porque generalmente usamos formatos privativos (MS Word, .ppt, etc.), que no pueden
-            editarse en cualquier sistema operativo.
-      \item Otras:
-      \vspace*{1cm}
-      \end{itemize}
+\item \stepcounter{preg} Siendo los materiales docentes documentos generalmente compartidos y actualizados con cierta
+      frecuencia, ¿por qué razones crees que no suelen contar con un sistema de control de versiones?
+   \begin{itemize}
+   \item En realidad, solo se comparten ocasionalmente y no necesitamos harmonizar las versiones.
+   \item Por desconocimiento de los sistemas de control de versiones por parte del profesorado.
+   \item Porque la UV no ofrece ningún repositorio remoto donde mantener y compartir los materiales
+         docentes.
+   \item Porque los materiales docentes incluyen imágenes o fragmentos protegidos con licencias
+         privativas que no pueden compartirse abiertamente.
+   \item Porque generalmente usamos formatos privativos (MS Word, .ppt, etc.), que no pueden
+         editarse en cualquier sistema operativo.
+   \item Otras:
+   \vspace*{1cm}
+   \end{itemize}
 
-   \item ¿Crees que mantener colectivamente los materiales docentes bajo un sistema de control de
-         versiones sería deseable?
-      \begin{itemize}
-      \item Sí.
-      \item No.
-      \item Indiferente.
-      \end{itemize}
+\item \stepcounter{preg} ¿Crees que mantener colectivamente los materiales docentes bajo un sistema de control de
+      versiones sería deseable?
+   \begin{itemize}
+   \item Sí.
+   \item No.
+   \item Indiferente.
+   \end{itemize}
 
-   \item ¿Estarías dispuesto o dispuesta a recibir formación sobre el uso de un sistema de control de
-         versiones como \textsf{git}?
-      \begin{itemize}
-      \item Sí.
-      \item No.
-      \end{itemize}
+\item \stepcounter{preg} ¿Estarías dispuesto o dispuesta a recibir formación sobre el uso de un sistema de control de
+      versiones como \textsf{git}?
+   \begin{itemize}
+   \item Sí.
+   \item No.
+   \end{itemize}
 
-   \item ¿Crees que la UV debería tener su propio servidor de repositorios de \textsf{git}, como un
-         Gitlab? \cite{Paderborn2023,PereiraBraga2023}
-      \begin{itemize}
-      \item Sí.
-      \item No.
-      \item Indiferente.
-      \end{itemize}
-   \end{enumerate}
+\item \stepcounter{preg} ¿Crees que la UV debería tener su propio servidor de repositorios de \textsf{git}, como un
+      Gitlab? \cite{Paderborn2023,PereiraBraga2023}
+   \begin{itemize}
+   \item Sí.
+   \item No.
+   \item Indiferente.
+   \end{itemize}
+\end{enumerate}
 
-\item En algunas asignaturas se usan o podrían usarse bases de datos grandes y/o una intensidad de
+\section{Sobre el uso de un servidor de cálculo para la docencia}
+\stepcounter{preg}
+\begin{enumerate}
+\item \stepcounter{preg} En algunas asignaturas se usan o podrían usarse bases de datos grandes y/o una intensidad de
       computación elevada, que son difíciles de implementar en los ordenadores de un aula de
       informática. En tu docencia habitual, ¿encuentras algún motivo como estos para que estudiantes
       y profesorado tuvieran que conectarse a un servidor de cálculo remoto?
@@ -237,11 +260,9 @@ de resumen serán publicados en la página web del Servicio de Informática.
    \item No.
    \end{itemize}
 
-   \begin{enumerate}
-   \item Si es así, ¿puedes concretar qué recurso sería más accesible a través de un servidor de 
-         cálculo remoto?
-   \vspace*{1cm}
-   \end{enumerate}
+\item \stepcounter{preg} Si es así, ¿puedes concretar qué recurso sería más accesible a través de un servidor de 
+      cálculo remoto?
+\vspace*{1cm}
 \end{enumerate}
 
 \bibliography{../references}
